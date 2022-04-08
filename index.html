@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 
     <style>
@@ -76,6 +78,16 @@
         }
     </style>
 </head>
+
+<!-- 
+    COMO UTILIZAR?
+    ESCREVE O CONTEÚDO QUE VOCÊ QUER VER NO GIF DENTRO ALI DA div.text-container (~ resultarão em uma quebra de linha)
+    PODE ALTERAR A COR DO GRADIENT POR TRÁS DO CMD ALI PELO CSS TBM
+    ABRE O SCREEN TO GIF e ajusta ele no tamanho do CMD (recomendo dar um zoom no browser de 133%, essa foi o zoom que deu no ultimo que fiz)
+    começa a gravar pelo screen to gif
+    espera 2 segundos pra soltar a função, dps que terminar, conta a piscada do cursor 16 vezes e para de gravar
+-->
+
 <body>
     <button onclick="myFunction()">CLICA EM MIM</button>
 
@@ -83,7 +95,7 @@
         <div class="cmd">
             <div class="text-container h2">
                 Hey there, I'm Tiago Dias! ~
-                Fullstack developer and currently working as a Front-end developer ~~
+                Front-end developer with focus on React and its ecosystem ~~
                 Welcome to my Github, feel free to take a look at my projects =)
             </div>
         </div>
@@ -93,7 +105,7 @@
 
         function animateText(element, delay) {
             element.style.display = 'block';
-            
+
             let elementTextSplitted = element.innerText.split('');
 
             element.innerText = ''
@@ -114,4 +126,5 @@
         }
     </script>
 </body>
+
 </html>
